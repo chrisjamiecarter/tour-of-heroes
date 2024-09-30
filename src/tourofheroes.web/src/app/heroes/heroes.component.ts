@@ -2,12 +2,13 @@ import { Component } from '@angular/core';
 import { NgIf, NgFor, UpperCasePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Hero } from '../hero';
+import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
 import { HEROES } from '../mock-heroes';
 
 @Component({
   selector: 'app-heroes',
   standalone: true,
-  imports: [FormsModule, NgIf, NgFor, UpperCasePipe],
+  imports: [FormsModule, HeroDetailComponent, NgIf, NgFor, UpperCasePipe],
   templateUrl: './heroes.component.html',
   styleUrl: './heroes.component.css'
 })
