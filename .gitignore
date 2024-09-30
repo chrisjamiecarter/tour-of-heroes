@@ -427,8 +427,10 @@ yarn-error.log
 !.vscode/extensions.json
 .history/*
 
+# Ignore cache created with the Angular CLI.
+.angular/
+
 # Miscellaneous
-/.angular/cache
 .sass-cache/
 /connect.lock
 /coverage
