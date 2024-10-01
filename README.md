@@ -1,30 +1,112 @@
-# tour-of-heroes
-This is an Angular application designed to demonstrate some key Angular concepts.
+<div align="center">
+	<img src="./_resources/tour-of-heroes-logo.png" alt="logo" width="100px" />
+	<h1>Tour of Heroes</h1>
+</div>
 
-# TourofheroesWeb
+Welcome to the **Tour of Heroes** App!
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
+This is an Angular application designed to demonstrate some key Angular concepts. Built using the Angluar tutorial documentation.
 
-## Development server
+It allows users to manage and view their heroes. It uses an in-memory web API to perform CRUD operations on the application data.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **Navigation**:
+	- Defines routes to the Dashboard page and the Heroes page.
+- **Dashboard**: 
+	- Shows a subset of the Heroes as 'Top Heroes'. Clicking on one of these will open the detail page for that Hero.
+	- Hero Search allows the user to type and a list of matches will be returned. Clicking on one of these will open the detail page for that Hero.
+- **Heroes**:
+	- Allows the user to add a new Hero.
+	- Displays a list of Heroes. Clicking on one of these will open the detail page for that Hero. Clicking the 'X' will delete that Hero.
+- **Detail**:
+	- Shows a Hero object. Allows the user to update the name.
+- **Messages**:
+	- Shows a list of messages that the application has performed. Allows the user to clear the list of messages.
+- **Responsive Design**: 
+	- A user-friendly interface designed to work on various devices.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies
 
-## Build
+- Angular
+- HTML
+- CSS
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Getting Started
 
-## Running unit tests
+### Prerequisites
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Angular v18.
+- A code editor like Visual Studio or Visual Studio Code.
+- Node.js
+- NPM
 
-## Running end-to-end tests
+### Installation
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Clone the repository:
+	- `git clone https://github.com/chrisjamiecarter/tour-of-heroes.git`
 
-## Further help
+2. Navigate to the Web project directory:
+	- `cd src\tourofheroes.web`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+3. Install dependencies:
+	- `npm install`
+
+### Running the Application
+
+1. Start the development server in the Web project directory:
+	- `npm start`
+
+## Usage
+
+Once the Web application is running:
+
+- View the Heroes Dashboard.
+- Search for a Hero.
+- View the list of Heroes.
+- Add a new Hero.
+- Edit a Hero.
+- Delete a Hero.
+- View the Messages.
+- Clear the Messages.
+
+### Dashboard
+
+![dashboard](./_resources/tour-of-heroes-dashboard.png)
+
+### Search
+
+![search](./_resources/tour-of-heroes-search.png)
+
+### Heroes
+
+![heroes](./_resources/tour-of-heroes-heroes.png)
+
+### Detail
+
+![heroes](./_resources/tour-of-heroes-detail.png)
+
+### Messages
+
+![heroes](./_resources/tour-of-heroes-messages.png)
+
+## How It Works
+
+- **Page Display**: This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
+- **API Integration**: [angular-in-memory-web-api](https://github.com/angular/in-memory-web-api) is used to simulate calling an API.
+- **Data Storage**: Storage is only persisted per browser session. A page refresh will reset the data.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+## Contact
+
+For any questions or feedback, please open an issue.
+
+---
+***Happy Tour of Heroesing!***
